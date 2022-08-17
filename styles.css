@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://static.tibia.com/images/global/header/background-artwork.jpg");
+    background-repeat: no-repeat;
+    background-color: #051122;
+    margin: 0;
+    font-family: Verdana,Arial,Times New Roman,sans-serif;
+}
+
+.header{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 50px 0;
+    background-color: #fff2db;
+    opacity: 0.85;
+    border-bottom: 4px solid #bf9049;
+    color: #5a2800;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 10px;
+    background-color: #fff2db;
+    border-bottom: 4px solid #bf9049;
+}
+
+.gallery img{
+    max-width: 100px;
+    height: 100px;
+    object-fit: fill;
+}
+
+.gallery::after{
+    content: "";
+    width: 100px;
+}
